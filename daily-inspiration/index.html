@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Inspiration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <p class="date" id="today-date"></p>
+      <h1>Daily Inspiration</h1>
+    </header>
+
+    <main>
+      <section class="card" id="card">
+        <span class="badge" id="entry-type">quote</span>
+        <blockquote class="entry-content" id="entry-content">Loading…</blockquote>
+        <p class="entry-source" id="entry-source"></p>
+
+        <div class="card-actions">
+          <button id="favorite-btn" class="icon-btn" title="Mark as favorite" aria-pressed="false">
+            <span id="favorite-icon">☆</span> Favorite
+          </button>
+          <button id="another-btn" class="primary-btn">Show me another</button>
+        </div>
+      </section>
+
+      <section class="favorites-section">
+        <button id="toggle-favorites" class="link-btn">
+          <span id="favorites-label">Show favorites</span> (<span id="favorites-count">0</span>)
+        </button>
+        <ul id="favorites-list" class="favorites-list" hidden></ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>From your collection in <code>data/collection.js</code> — add your own quotes, memories, goals, and ideas any time.</p>
+    </footer>
+  </div>
+
+  <script src="data/collection.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
