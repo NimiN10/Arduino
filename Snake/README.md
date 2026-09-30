@@ -1,4 +1,6 @@
 # Arduino
+
+Status: done
 first project-Snake game:
 hardware:
 Arduino Uno///
